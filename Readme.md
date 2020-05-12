@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Vlad Shpyra](https://up.htmlacademy.ru/htmlcss/28/user/331185).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Гинтер](https://htmlacademy.ru/profile/id781369).
 
 ---
 
