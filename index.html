@@ -113,33 +113,37 @@
 
         <p>Укажите предполагаемые даты поездки, 
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <form action="https://echo.htmlacademy.ru" method="get">
-            <p>
-                <label for="arrival">Дата заезда:</label>
-                 <input type="text" id="arrival"> 
-             </p> 
-             
-             <p>
-                 <label for="departure">Дата выезда:</label>
-                 <input type="text" name="departure" id="departure">
-             </p>
-                <div class="visitors">
-                 <label>Взрослые:</label>
-                 <div>
-                    <button disabled>-</button>
-                     <input type="number">
-                     <button disabled>+</button>
-                 </div>
-            
-                <label>Дети:</label>
-                <div>
-                    <button disabled>-</button>
-                     <input type="number">
-                     <button disabled>+</button>
-                 </div>
-                </div>
-            <button type="submit">Найти</button>
-         </form>
+
+          <div>
+           <a href="#">Поиск гостиницы в Седоне</a>
+            <form action="https://echo.htmlacademy.ru" method="get" id="search">
+              <p>
+                  <label for="arrival">Дата заезда:</label>
+                  <input type="text" id="arrival"> 
+              </p> 
+              
+              <p>
+                  <label for="departure">Дата выезда:</label>
+                  <input type="text" name="departure" id="departure">
+              </p>
+                  <div class="visitors">
+                  <label>Взрослые:</label>
+                  <div>
+                      <button disabled>-</button>
+                      <input type="number">
+                      <button disabled>+</button>
+                  </div>
+              
+                  <label>Дети:</label>
+                  <div>
+                      <button disabled>-</button>
+                      <input type="number">
+                      <button disabled>+</button>
+                  </div>
+                  </div>
+              <button type="submit">Найти</button>
+          </form>
+        </div>
         <map>
           <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d187347.5563183956!2d74.55492355449216!3d42.80302841439556!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2spl!4v1589550261340!5m2!1sru!2spl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </map>
