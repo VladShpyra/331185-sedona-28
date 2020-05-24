@@ -20,31 +20,56 @@
         </ul>
       </nav>
     </header>
-
       <main>
           <section>
-                <ul>
-                    <h4>Инфраструктура:</h4>
-                    <li>Бассейн</li>
-                    <li>Парковка</li>
-                    <li>Wi-Fi</li>
-                </ul>
-
-                <ul>
-                    <h4>Тип жилья:</h4>
-                    <li>Гостиница</li>
-                    <li>Мотель</li>
-                    <li>Апартаменты</li>
-                </ul>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <fieldset>
+                  <legend>Инфраструктура:</legend>
+                  <ul>
+                    <li>
+                            <input type="checkbox" name="bassen" id="filter-bassen" checked> 
+                            <label for="filter-bassen">Бассейн</label>
+                    </li>
+                        <li>
+                            <input type="checkbox" name="parking" id="filter-parking">
+                            <label for="filter-parking">Парковка</label>
+                    </li>
+                    <li>
+                            <input type="checkbox" name="wifi" id="filter-wifi">
+                            <label for="filter-wifi">WI-FI</label>
+                    </li>
+                  </ul>
+              </fieldset>
+        
+              <fieldset>
+                  <legend>Тип жилья:</legend>
+                  <ul>
+                        <li>
+                            <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                            <label for="filter-hotel">Гостиница</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="motel" id="filter-motel" checked>
+                            <label for="filter-motel">Мотель</label>
+                        </li>
+                      <li>
+                            <input type="checkbox" name="apataments" id="filter-apataments" checked>
+                            <label for="filter-apataments">Апартаменты</label>
+                      </li>
+                  </ul>
+              </fieldset>
+         </form>
 
               
-                    <h2>Фильтр цены</h2>
-                    <p>Стоимость в сутки (Р):</p>
-                    <input type="number">
-                    <input type="number">
+                    <h2 class="visualy-hidden">Фильтр цены</h2>
+                  <fieldset> 
+                    <legend>Стоимость в сутки (Р):</legend> 
+                    <div>
+                      <p>От 0 | До 3000</p>
+                    </div>
                     <input type="range" min="0" max="3000" value="50" class="slider" id="myRange">
                     <button type="submit">Показать</button>
-                </div>
+                  </fieldset>
           </section>
 
           <section>
@@ -116,8 +141,8 @@
       </main>
       <footer>
         <div>
-          <p>#visitSEDONA</p>
-          <p>ТЕЛ: +7(495) 666-01-66</p>
+          <a href="https://www.instagram.com/."><p>#visitSEDONA</p></a> 
+          <p>ТЕЛ: <a href="tel:+7(495) 666-01-66">+7(495) 666-01-66</a></p>
         </div>
 
       <ul>
