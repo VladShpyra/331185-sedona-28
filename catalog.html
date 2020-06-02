@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="body-page">
 
-    <header>
-      <nav>
-        <a href="index.html">
-          <img src="img/logo-sedona.svg" width="138" height="70" alt="main_logo">
-        </a>
-
-        <ul>
+    <header  class="main-header">
+      <nav class="main-navigation">
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
+          <li></li>
+          <li class="header-logo"><a href="index.html">
+            <img src="img/logo-sedona.svg" width="138" height="70" alt="Logo of city Sedona">
+            </a></li>
           <li><a href="#">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
@@ -75,10 +78,10 @@
                   </fieldset>
           </section>
 
-          <section>
-              <h2>Результат поиска</h2>
+          <section class="results">
+              <h2 class="visually-hidden">Результат поиска</h2>
               
-              <p>Найдено: 3</p>
+              <h4>Найдено: 3</h4>
 
               <p>Сортировка:</p>
               <ul>
@@ -91,16 +94,20 @@
             <a href="#"><img src="" alt="down"></a>
           </section>
 
-          <section>
-              <ul>
-                  <li>
+          <section class="hotels">
+              <ul class="hotels-items">
+                  <li class="hotel-1">
                       <img src="img/amara.jpg" width="135" height="90" alt="photo_of_hotel_Amararesort">
-                      <div>
+                      <div class="hotel-description">
                         <h3>Amararesort</h3>
-                        <span>Гостиница</span>
-                        <span>От 4000 Р.</span> 
-                        <a href="#">Подробнее</a>
-                        <a href="#">Забронировать</a>
+                      </div>
+                          <div class="hotel-costs">
+                            <span>Гостиница</span>
+                            <span>От 4000 Р.</span> 
+                          </div>
+                            <div class="hotel-description-right">
+                              <a class="batton-info" href="#">Подробнее</a>
+                              <a class="batton-reserve" href="#">Забронировать</a>
                       </div> 
                       <div>
                         <img src="" alt="stars">
@@ -112,11 +119,14 @@
                 <li>
                     <img src="img/desert.jpg" width="135" height="90" alt="photo_of_hotel_Desert" >
                     <div>
-                      <h3>Amara Resort & Spa</h3>
+                      <h3>Villas at Poco Diablo</h3>
+                      <div class="">
+                          <span>Мотель</span>
+                          <span>От 3000Р.</span> 
                       <span>Мотель</span>
                       <span>От 3000Р.</span> 
-                      <a href="#">Подробнее</a>
-                      <a href="#">Забронировать</a>
+                      <a class="batton-info" href="#">Подробнее</a>
+                      <a class="batton-reserve" href="#">Забронировать</a>
                     </div>
                     <div>  
                       <img src="" alt="stars">
@@ -131,8 +141,8 @@
                       <h3>Villas at Poco Diablo</h3>
                       <span>Апартаменты</span>
                       <span>От 2000 Р.</span> 
-                      <a href="#">Подробнее</a>
-                      <a href="#">Забронировать</a>
+                      <a class="batton-info" href="#">Подробнее</a>
+                      <a class="batton-reserve" href="#">Забронировать</a>
                     </div>
                     <div>  
                       <img src="" alt="stars">
@@ -142,27 +152,38 @@
             </ul>
           </section>
       </main>
-      <footer>
-        <div>
-          <a href="https://www.instagram.com/."><p>#visitSEDONA</p></a> 
-          <p>ТЕЛ: <a href="tel:+7(495) 666-01-66">+7(495) 666-01-66</a></p>
+      <footer class="main-footer">
+        <div class="footer-contacts">
+         <a href="https://www.instagram.com/."><p>#visitSEDONA</p></a> 
+         <p>ТЕЛ: <a href="tel:+7(495) 666-01-66">+7(495) 666-01-66</a></p>
         </div>
 
-      <ul>
-          <li>
-            <a href="#"><img src="">Вконтакте</a>
+        <ul class="social">
+          <li class="logo-tw">
+            <a class="social-button" href="#">
+              <img src="img/twitter.svg" alt=""></a>
+              <span class="visually-hidden">Твитер</span>
+           
           </li>
-          <li>
-            <a href="#"><img src="">Фейсбук</a>
+          <li class="logo-fb">
+            <a class="social-button" href="#">
+              <img src="img/facebook.svg" alt=""></a>
+              <span class="visually-hidden">Фейсбук</span>
+            
           </li>
-          <li>
-            <a href="#"><img src="">Ютуб</a>
+          <li class="logo-yt">
+            <a class="social-button" href="#">
+              <img src="img/youtube.svg" alt=""></a>
+              <span class="visually-hidden">Ютуб</span>
+            
           </li>
-      </ul>
-      <div>
-        <p>Website by</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="logohtml"></a>
-      </div>
+        </ul>
+      </section>
+      <p class="footer-copyright">
+         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="logohtml"></a
+      </p>
     </footer>
-</body>
+  </div>
+    <script src="script.js"></script>
+  </body>
 </html>

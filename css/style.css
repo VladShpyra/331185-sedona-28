@@ -1,0 +1,247 @@
+:root {
+    --basic-white: #ffffff;
+    --basic-background: #81B3D2;
+    --basic-black: #000000;
+    --header-height: 55px
+}
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+        /* GRID*/
+
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.page-body {
+    min-height: 100%;
+    align-content: start;
+  }
+  
+
+
+/*Main-navigation*/
+
+.main-header{
+    position: relative;
+    height: var(--header-height);
+}
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    text-decoration: none;
+    position: relative;
+}
+.main-navigation a{
+    color: var(--basic-black);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.site-navigation {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header-logo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.site-navigation a:hover{
+    color: #81B3D2;
+}
+.site-navigation a:focus{
+    color: #000000;
+    opacity: 0.3;
+}
+
+
+
+/* Main-information */
+
+.general-information {
+    height: calc(100vh - var(--header-height));
+    height: 509px;
+    background-image: url(/img/main_bg.jpg);
+    background-color: #32494E;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
+}
+.gallery-photo-up{
+    text-align: center;
+    padding-top: 77px;
+    padding-bottom: 55px;
+}
+.gallery-photo-down{
+    text-align: center;
+}
+
+
+
+/*Features-list*/
+.description h2{
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 40px 0;
+}
+.description p{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+    text-align: center;
+}
+
+
+.search-hotel{
+   text-align: center;
+}
+.search-button{
+    width: 568px;
+    height: 86px;
+    background: #766357;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-white);
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/* Footer */
+footer{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+}
+footer li{
+    list-style: none;
+}
+.footer-contacts p{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+}
+.social{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    padding-top: 35px;
+}
+.logo-tw{
+    background: #81B3D2;
+    max-width: 46px;
+    height: 48px;
+}
+.logo-fb{
+    background: #81B3D2;
+    max-width: 46px;
+    height: 48px;
+}
+.logo-yt{
+    background: #81B3D2;
+    max-width: 46px;
+    height: 48px;
+}
+.main-footer{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-copyright a:hover{
+   color: #81B3D2;
+}
+.social a:hover{
+    color: #669EC0;
+}
+.visually-hidden{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+.form-search{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Calog page */
+
+.hotel-1{
+    margin: 0;
+    position: relative;
+    padding: 29px 0 0 73px;
+    border-top: 1px solid #e5e5e5;
+    list-style: none;
+}
+.hotel-description{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+
