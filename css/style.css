@@ -162,8 +162,17 @@ footer li{
     padding: 0;
     padding-top: 35px;
 }
+.social svg{
+    padding: 15px;
+}
+.social li:hover{
+    background-color: #669EC0;
+}
+.social li:active{
+    background-color: #5496BD;
+}
 .logo-tw{
-    background: #81B3D2;
+    background: #81B3D2; 
     max-width: 46px;
     height: 48px;
 }
@@ -180,12 +189,6 @@ footer li{
 .main-footer{
     display: flex;
     justify-content: space-around;
-}
-.footer-copyright img:hover{
-   color: #81B3D2;
-}
-.social img:hover{
-    color: #669EC0;
 }
 .visually-hidden{
     visibility: hidden;
