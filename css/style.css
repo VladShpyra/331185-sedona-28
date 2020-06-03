@@ -23,7 +23,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-        /* GRID*/
 
 
 .wrapper{
@@ -33,7 +32,7 @@ img {
 .page-body {
     min-height: 100%;
     align-content: start;
-  }
+}
   
 
 
@@ -182,10 +181,10 @@ footer li{
     display: flex;
     justify-content: space-around;
 }
-.footer-copyright a:hover{
+.footer-copyright img:hover{
    color: #81B3D2;
 }
-.social a:hover{
+.social img:hover{
     color: #669EC0;
 }
 .visually-hidden{
