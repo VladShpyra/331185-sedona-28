@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="body-page">
-    <div class="wrapper">
-    <header  class="main-header">
+  <body>
+
+    <header>
       <nav class="main-navigation">
-        <ul class="site-navigation">
+        <a>
+        <img src="img/logo-sedona.svg" width="138" height="70" alt="main_logo">
+        </a>
+
+        <ul>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
-          <li></li>
-          <li class="header-logo"><a href="#">
-            <img src="img/logo-sedona.svg" width="138" height="70" alt="Logo of city Sedona">
-            </a></li>
           <li><a href="#">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
@@ -26,26 +26,22 @@
 
     <main>
 
-      <section class="general-information">
-        <div class="gallery-photo-up">
-          <img src="img/welcome.png" alt="Welcome_to_the_gargeous">
-        </div>
-        <div class="gallery-photo-down">
-          <img src="img/sedona.png" alt="sedona">  
-        </div>  
+      <section class="start-information">
+        <img src="img/welcome.png" alt="Welcome_to_the_gargeous">
+        <img src="img/sedona.png" alt="sedona">
       </section>
 
-      <div class="description">
-        <h2>Седона — небольшой городок в Аризоне,<br>
+      <section class="general-information">
+        <h2>Седона — небольшой городок в Аризоне, <br>
            заслуживающий большего!</h2>
 
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </div>    
+
           
-          <section>
+          <section class="items">
             <div>
-              <div>
-                <h4>Настоящий 
+              <div class="about">
+                <h4>Настоящий </br>
                   городок</h4>
                 <p>— №1 —</p>
                 <p>Седона - не аттракцион для туристов, там
@@ -54,39 +50,38 @@
               <img src="img/building.jpg" width="800" height="256" alt="photo_of_build">
             </div>
 
-              <ul>
+              <ul class="list-items">
 
                 <li>
-                  <img src="img/icon-1.svg" alt="icon1">
+                  <div class="icon-1"></div>
                   <h3>Жильё</h3>
                   <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
 
                 <li>
-                  <img src="img/icon-2.svg" alt="icon2">
+                  <div class="icon-2"></div>
                   <h3>Еда</h3>
                   <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
 
                 <li>
-                  <img src="img/icon-3.svg" alt="icon3">
+                  <div class="icon-3"></div>
                   <h3>Сувениры</h3>
                   <p>Не только китайского, но и местного
                     производства!</p>
                 </li>
               </ul>
-            </section>
+          </section>
         
-      <section> 
+      <section class="description"> 
           <div>
             <img src="img/canyon.jpg" width="800" height="256" alt="photo_of_canyon">
-            <div>
+            <div class="about">
               <h4>Там есть Мост дьявола</h4>
               <p>— №2 —</p>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>  
           </div>
-      </section>
       <div>    
             <ul>
               <li>   
@@ -111,22 +106,23 @@
                     и толпится там</p>
               </li> 
             </ul> 
-      </div>        
-    </div>
+      </div>
+      </section>       
+    </section>
 
-      <div class="description">
+      <section class="search">
 
         <h2>Заинтересовались?</h2>
 
-        <p>Укажите предполагаемые даты поездки,<br> 
+        <p>Укажите предполагаемые даты поездки, 
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        </div>
-          <div class="search-hotel">
-           <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
-            <form class="form-search" action="https://echo.htmlacademy.ru" method="get" id="search">
+
+          <div class="search-form">
+           <a href="#">Поиск гостиницы в Седоне</a>
+            <form action="https://echo.htmlacademy.ru" method="get" id="search">
               <p>
                   <label for="arrival">Дата заезда:</label>
-                  <input type="text" id="arrival"> 
+                  <input type="text" name="arrival" id="arrival"> 
               </p> 
               
               <p>
@@ -134,71 +130,57 @@
                   <input type="text" name="departure" id="departure">
               </p>
                   <div class="visitors">
-                  <label>Взрослые:</label>
+                  <label for="adult">Взрослые:</label>
                   <div>
                       <button>-</button>
-                      <input type="number">
+                      <input name="adult" id="adult" type="text">
                       <button>+</button>
                   </div>
               
-                  <label>Дети:</label>
+                  <label for="children">Дети:</label>
                   <div>
                       <button>-</button>
-                      <input type="number">
+                      <input name="children" id="children" type="text">
                       <button>+</button>
                   </div>
                   </div>
               <button type="submit">Найти</button>
           </form>
         </div>
+      </section>
         <map>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d187347.5563183956!2d74.55492355449216!3d42.80302841439556!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2spl!4v1589550261340!5m2!1sru!2spl" width="100%" height="473" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d187347.5563183956!2d74.55492355449216!3d42.80302841439556!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2spl!4v1589550261340!5m2!1sru!2spl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </map>
 
-      </div>
     </main>
 
-    <footer class="main-footer">
-        <div class="footer-contacts">
+    <footer>
+        <div class="footer-contact">
          <a href="https://www.instagram.com/."><p>#visitSEDONA</p></a> 
          <p>ТЕЛ: <a href="tel:+7(495) 666-01-66">+7(495) 666-01-66</a></p>
         </div>
 
-        <ul class="social">
-          <li class="logo-tw">
-            <a class="social-button" href="#">
-              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="white"/>
-                </svg>
-              <span class="visually-hidden">Твитер</span>
-           
+      <ul class="social">
+          <li>
+            <a class="social-tw" href="#"><img src=""><span class="visually-hidden">Twitter</span></a>
           </li>
-          <li class="logo-fb">
-            <a class="social-button" href="#">
-              <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
-                </svg>
-              <span class="visually-hidden">Фейсбук</span>
-            
+          <li>
+            <a class="social-fb" href="#"><img src=""><span class="visually-hidden">Фейсбук</span></a>
           </li>
-          <li class="logo-yt">
-            <a class="social-button" href="#">
-              <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
-                </svg>
-              <span class="visually-hidden">Ютуб</span>
-            
+          <li>
+            <a class="social-yt" href="#"><img src=""><span class="visually-hidden">Ютуб</span></a>
           </li>
-        </ul>
-      </section>
-      <div class="footer-copyright">
+      </ul>
+      <div class="copyright">
         <p>Website by</p>
-         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="logohtml"></a>
-         </div>
+        <a class="logo-html" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="logohtml"></a>
+      </div>
     </footer>
-  </div>
-    <script src="script.js"></script>
+   
+
   </body>
 </html>
+
+
 
 
