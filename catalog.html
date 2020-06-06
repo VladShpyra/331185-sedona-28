@@ -84,13 +84,16 @@
 
               <p>Сортировка:</p>
               <ul>
-                  <li>По цене</li>
-                  <li>По типу</li>
-                  <li>По рейтингу</li>
+                  <li><a href="#">По цене</a></li>
+                  <li><a href="#">По типу<a></li>
+                  <li><a href="#">По рейтингу</a></li>
               </ul>
-
-            <a href="#"><img src="" alt="up"></a>
-            <a href="#"><img src="" alt="down"></a>
+            <div class="arrow-up">
+              <a href="#"></a>
+            </div>
+            <div class="arrow-down">
+              <a href="#"></a>
+            </div>    
           </section>
 
           <section class="hotels">
@@ -99,51 +102,56 @@
                       <img src="img/amara.jpg" width="135" height="90" alt="photo_of_hotel_Amararesort">
                       <div>
                         <a class="name-of-hotel" href="#">Amara Resort & Spa</a>
+                      <div class="hotels-about">    
                         <span>Гостиница</span>
-                        <span>От 4000 Р.</span> 
+                        <span>От 4000 Р.</span>
+                      </div>   
+                      <div class="hotels-btn">  
                         <a class="details" href="#">Подробнее</a>
                         <a class="reservation" href="#">Забронировать</a>
+                      </div>
                       </div> 
-                      <div>
+                      <div class="container-stars">
                         <span class="stars1"></span>
-                        <span class="stars1"></span>
-                        <span class="stars1"></span>
-                        <span class="stars1"></span>
-                        <p>Рейтинг: 8,5</p>
-                      </div>  
+                      </div>
+                      <p>Рейтинг: 8,5</p>  
                   </li>
-              </ul>
-              <ul>
-                <li>
+                  <li>
                     <img src="img/desert.jpg" width="135" height="90" alt="photo_of_hotel_Desert" >
                     <div>
                       <a class="name-of-hotel" href="#">Desert Quail Inn</a>
+                    <div class="hotels-about">  
                       <span>Мотель</span>
-                      <span>От 3000Р.</span> 
+                      <span>От 3000Р.</span>
+                    </div>   
+                    <div class="hotels-btn">  
                       <a class="details" href="#">Подробнее</a>
                       <a class="reservation" href="#">Забронировать</a>
+                    </div> 
                     </div>
-                    <div>  
+                    <div class="container-stars">  
                       <span class="stars2"></span>
-                      <p>Рейтинг: 8,9</p>
                     </div>  
-                </li>
-            </ul>
-            <ul>
-                <li>
+                    <p>Рейтинг: 8,9</p>
+                  </li>
+                  <li>
                     <img src="img/villas.jpg" width="135" height="90" alt="photo_of_hotel_Villas">
                     <div>
                       <a class="name-of-hotel" href="#">Villas at Poco Diablo</a>
+                    <div class="hotels-about">
                       <span>Апартаменты</span>
                       <span>От 2000 Р.</span> 
+                    </div>  
+                    </div>    
+                    <div class="hotels-btn">
                       <a class="details" href="#">Подробнее</a>
                       <a class="reservation" href="#">Забронировать</a>
-                    </div>
-                    <div>  
+                    </div>  
+                    <div class="container-stars"> 
                       <span class="stars3"></span>
-                      <p>Рейтинг: 9,2</p>
                     </div>
-                </li>
+                    <p>Рейтинг: 9,2</p>
+                  </li>
             </ul>
           </section>
       </main>
@@ -155,13 +163,13 @@
 
       <ul class="social">
           <li>
-            <a class="social-tw" href="#"><img src=""><span class="visually-hidden">Twitter</span></a>
+            <a class="social-tw" href="#" aria-label="Twitter"></a>
           </li>
           <li>
-            <a class="social-fb" href="#"><img src=""><span class="visually-hidden">Фейсбук</span></a>
+            <a class="social-fb" href="#" aria-label="Facebook"></a>
           </li>
           <li>
-            <a class="social-yt" href="#"><img src=""><span class="visually-hidden">Ютуб</span></a>
+            <a class="social-yt" href="#" aria-label="Youtube"></a>
           </li>
       </ul>
       <div class="copyright">
