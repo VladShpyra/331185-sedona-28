@@ -25,10 +25,10 @@ img {
 }
 
 
-/* .wrapper{
+ .wrapper{
     width: 1200px;
     margin: 0 auto;
-} */
+} 
 
   
 
@@ -98,27 +98,21 @@ img {
     font-size: 14px;
     line-height: 21px;
 }
-
-.icon-1{
-    background-image: url(../img/icon-1.svg);
-    background-repeat: no-repeat;
-    width: 75px;
-    height: 72px;
-}
-
-.icon-2{
-    background-image: url(../img/icon-2.svg);
-    background-repeat: no-repeat;
-    width: 75px;
-    height: 72px;
-}
-
-.icon-3{
-    background-image: url(../img/icon-3.svg);
+.icons {
     background-repeat: no-repeat;
     width: 75px;
     height: 77px;
 }
+.icon-1{
+    background-image: url(../img/icon-1.svg);
+}
+
+.icon-2{
+    background-image: url(../img/icon-2.svg);
+}
+.icon-3{
+    background-image: url(../img/icon-3.svg);
+}   
 .list-items h3{
     color: var(--basic-black);
     font-weight: bold;
@@ -157,31 +151,22 @@ footer li{
     line-height: 26px;
     text-transform: uppercase;
 }
-
-.social-tw{
+.social-icon{
+    display: inline-block;
     height: 46px;
     width: 48px;
     background-color: #81B3D2;
-    background-image: url(../img/twitter.svg);
     background-repeat: no-repeat;
     background-position: center;
-    
+}
+.social-tw{
+    background-image: url(../img/twitter.svg);  
 }
 .social-fb{
-    height: 46px;
-    width: 48px;
-    background-color: #81B3D2;
     background-image: url(../img/facebook.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .social-yt{
-    height: 46px;
-    width: 48px;
-    background-color: #81B3D2;
     background-image: url(../img/youtube.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .social a:hover{
     background-color: #669EC0;
@@ -205,42 +190,34 @@ footer li{
 li{
     list-style: none;
 }
-.arrow-up {
-    background-image: url(../img/icon-up-dir.svg);
+.arrows{
+    display: block;
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
+}
+.arrow-up {
+    background-image: url(../img/icon-up-dir.svg);
 }
 .arrow-up a{
     background-image: url(../img/icon-up-dir.svg);
 }
 .arrow-down {
     background-image: url(../img/icon-down-dir.svg);
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
 }
 .arrow-down a{
     background-image: url(../img/icon-down-dir.svg);
-    
 }
-.stars1{
-    background-image:url(../img/star.svg);
+.hotel{
+    margin-top: 40px;
+}
+.stars{
+    display: inline-block;
+    margin-top: 20px;
     width: 19px;
     height: 17px;
-}
-.stars2{
-    background-image:url(../img/star.svg);
-    width: 19px;
-    height: 17px;
-    left: 1000px;
-}
-.stars3{
-    background-image:url(../img/star.svg);
-    width: 19px;
-    height: 17px;
-    left: 1000px;
-}
+    background-image: url(../img/star.svg);
+} 
 .name-of-hotel{
     color: var(--basic-black);
     font-style: normal;
@@ -255,14 +232,17 @@ li{
 .hotels-btn {
     margin-top: 10px;
 }
-.details{
-    color: var(--basic-white);
-    background-color: #81B3D2;
+.hotels-btn a {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
     line-height: 21px;
     padding: 17px 3px;
+}
+.details{
+    color: var(--basic-white);
+    background-color: #81B3D2;
+  
 }
 .details:hover{
     background-color: #669EC0;
@@ -270,16 +250,21 @@ li{
 .reservation{
     color: var(--basic-white);
     background-color: #766357;;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 21px;
-    padding: 17px 3px;
 }
 .reservation:hover{
     background-color: #604E43;
 }
 
 
+
+/* Modal window */
+.search-form{
+    width: 568px;
+    height: 395px;
+    text-align: center;
+}
+.search-form p{
+
+}
 
 
