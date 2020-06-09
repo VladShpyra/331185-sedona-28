@@ -272,7 +272,7 @@ li{
     height: 17px;
     background-image: url(../img/star.svg);
 } 
-.rating{
+.rating p{
     display: inline-block;
     width: 120px;
     height: 27px;
