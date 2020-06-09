@@ -76,16 +76,14 @@
                     </fieldset>
                   </form>
             </section>
-
-            <section>
-                <h2>Результат поиска</h2>
-                
-                <p>Найдено: 3</p>
+            <section class="search-result">
+                <h2 class="visually-hidden">Результат поиска</h2> 
+                <h2>Найдено: 3</h2>
                 <div>
                   <p>Сортировка:</p>
-                  <ul>
-                      <li><a href="#">По цене</a></li>
-                      <li><a href="#">По типу<a></li>
+                  <ul class="search-parameters">
+                      <li><a href="#" class="active">По цене</a></li>
+                      <li><a href="#">По типу</a></li>
                       <li><a href="#">По рейтингу</a></li>
                   </ul>
                 </div>
@@ -94,7 +92,6 @@
                 <a class="arrows arrow-down" href="#"></a>
               </div>    
             </section>
-
             <section class="hotels">
                 <ul>
                     <li class="hotel item1">
@@ -110,14 +107,16 @@
                           <a class="reservation" href="#">Забронировать</a>
                         </div>
                         </div> 
-                        <div class="container-stars">
-                          <span class="stars"></span>
-                          <span class="stars"></span>
-                          <span class="stars"></span>
-                          <span class="stars"></span>
-                          <span class="stars"></span>
+                        <div class="rating">
+                          <div class="container-stars">
+                            <span class="stars"></span>
+                            <span class="stars"></span>
+                            <span class="stars"></span>
+                            <span class="stars"></span>
+                            <span class="stars"></span>
+                          </div>
+                          <p class="rating">Рейтинг: 8,5</p>  
                         </div>
-                        <p>Рейтинг: 8,5</p>  
                     </li>
                     <li class="hotel item2">
                       <img src="img/desert.jpg" width="135" height="90" alt="photo_of_hotel_Desert" >
@@ -132,12 +131,14 @@
                         <a class="reservation" href="#">Забронировать</a>
                       </div> 
                       </div>
-                      <div class="container-stars">  
-                        <span class="stars"></span>
-                        <span class="stars"></span>
-                        <span class="stars"></span>
-                      </div>  
-                      <p>Рейтинг: 8,9</p>
+                      <div class="rating">
+                        <div class="container-stars">  
+                          <span class="stars"></span>
+                          <span class="stars"></span>
+                          <span class="stars"></span>
+                        </div>  
+                        <p>Рейтинг: 8,9</p>
+                      </div>
                     </li>
                     <li class="hotel item2">
                       <img src="img/villas.jpg" width="135" height="90" alt="photo_of_hotel_Villas">
@@ -151,12 +152,14 @@
                       <div class="hotels-btn">
                         <a class="details" href="#">Подробнее</a>
                         <a class="reservation" href="#">Забронировать</a>
-                      </div>  
-                      <div class="container-stars"> 
-                        <span class="stars"></span>
-                        <span class="stars"></span>
-                      </div>
-                      <p>Рейтинг: 9,2</p>
+                      </div> 
+                      <div class="rating">
+                        <div class="container-stars"> 
+                          <span class="stars"></span>
+                          <span class="stars"></span>
+                        </div>
+                        <p class="rating">Рейтинг: 9,2</p>
+                      </div> 
                     </li>
               </ul>
             </section>

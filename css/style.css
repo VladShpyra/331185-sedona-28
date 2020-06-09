@@ -9,8 +9,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'PT Sans', sans-serif;
-    font-size: 21px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 21px;
 }
 ul{
     margin: 0;
@@ -39,26 +39,52 @@ img {
     font-size: 14px;
     line-height: 26px;
     text-decoration: none;
-    position: relative;
 }
-.main-navigation a{
+.main-navigation a {
     color: var(--basic-black);
     text-transform: uppercase;
     font-weight: bold;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 26px;
 }
-.main-navigation a:hover{
+.main-navigation a:hover {
     color: #81B3D2;
+}
+.navigation-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navigation-link a:first-child {
+    margin-left: 72px;
+}
+.navigation-link a:last-child {
+    margin-right: 72px;
+}
+.navigation-link a:nth-child(2) {
+    margin-left: 816px;
+}
+.header-logo {
+    position: absolute;
+    margin-left: 531px;
 }
 
 /* Main-information */
 
-.start-information {
-    height: calc(100vh - var(--header-height));
+.start-information { 
     height: 509px;
     background-image: url(../img/main_bg.jpg);
     background-color: #32494E;
     background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 30px;
 }
+.img1{
+    margin-top: 77px;
+    margin-bottom: 53px;
+}
+
 
 
 /* General information */
@@ -71,6 +97,7 @@ img {
     align-items: center;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 40px;
 }
 .general-information p{
     color: var(--basic-black);
@@ -95,8 +122,6 @@ img {
 }
 .about p{
     color: var(--basic-white);
-    font-size: 14px;
-    line-height: 21px;
 }
 .icons {
     background-repeat: no-repeat;
@@ -120,17 +145,25 @@ img {
     line-height: 21px;
     text-transform: uppercase;
 }
-.list-items p{
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-}
 .description h4{
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
+}
+.search h2{
+    color: var(--basic-black);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.search p{
+    text-transform: uppercase;
+    text-align: center;
 }
 
 
@@ -152,7 +185,9 @@ footer li{
     text-transform: uppercase;
 }
 .social-icon{
+    vertical-align: center;
     display: inline-block;
+    vertical-align: center;
     height: 46px;
     width: 48px;
     background-color: #81B3D2;
@@ -175,9 +210,6 @@ footer li{
     visibility: hidden;
 }
 .copyright p{
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
     text-transform: uppercase;
 }
 
@@ -187,6 +219,26 @@ footer li{
 
 
 /* Catalog page */
+.search-result{
+    text-transform: uppercase;
+}
+.search-result p, a{
+    font-size: 12px;
+    line-height: 18px;
+}
+.search-parameters .active{
+    color: #81B3D2;
+    border: none;
+}
+.search-parameters a {
+    color: var(--basic-black);
+    opacity: 0.3;
+    border-bottom: 1px dashed #81B3D2; 
+}
+.search-parameters a:hover{
+    color: #81B3D2;
+}
+
 li{
     list-style: none;
 }
@@ -211,13 +263,26 @@ li{
 .hotel{
     margin-top: 40px;
 }
+.container-stars{
+    display: flex;
+}
 .stars{
-    display: inline-block;
     margin-top: 20px;
     width: 19px;
     height: 17px;
     background-image: url(../img/star.svg);
 } 
+.rating{
+    display: inline-block;
+    width: 120px;
+    height: 27px;
+    text-transform: uppercase;
+    color: #666666;
+    background-color: #F2F2F2;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+}
 .name-of-hotel{
     color: var(--basic-black);
     font-style: normal;
@@ -232,6 +297,9 @@ li{
 .hotels-btn {
     margin-top: 10px;
 }
+.hotels-about span{
+    text-transform: uppercase;
+}
 .hotels-btn a {
     text-transform: uppercase;
     font-weight: bold;
@@ -240,9 +308,9 @@ li{
     padding: 17px 3px;
 }
 .details{
+    display: inline-block;
     color: var(--basic-white);
     background-color: #81B3D2;
-  
 }
 .details:hover{
     background-color: #669EC0;
