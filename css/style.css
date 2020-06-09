@@ -184,6 +184,10 @@ footer li{
     line-height: 26px;
     text-transform: uppercase;
 }
+.footer-contact a{
+    font-size: 21px;
+    color: var(--basic-black);
+}
 .social-icon{
     vertical-align: center;
     display: inline-block;
@@ -222,7 +226,7 @@ footer li{
 .search-result{
     text-transform: uppercase;
 }
-.search-result p, a{
+.search-result > p,a{
     font-size: 12px;
     line-height: 18px;
 }
