@@ -12,10 +12,9 @@
       <header>
         <nav class="main-navigation">
           <a href="index.html">
-            <img src="img/logo-sedona.svg" width="138" height="70" alt="main_logo">
+          <img class="header-logo" src="img/logo-sedona.svg" width="138" height="70" alt="main_logo">
           </a>
-
-          <ul>
+          <ul class="navigation-link">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
@@ -25,8 +24,8 @@
       </header>
         <main>
             <section>
-              <form action="https://echo.htmlacademy.ru" method="get">
-                <fieldset>
+              <form class="filter-forms" action="https://echo.htmlacademy.ru" method="get">
+                <fieldset class="checkbox-left">
                     <legend>Инфраструктура:</legend>
                     <ul>
                       <li>
@@ -44,7 +43,7 @@
                     </ul>
                 </fieldset>
           
-                <fieldset>
+                <fieldset class="checkbox-right">
                     <legend>Тип жилья:</legend>
                     <ul>
                           <li>
@@ -63,7 +62,7 @@
                 </fieldset>
           
                       <h2 class="visually-hidden">Фильтр цены</h2>
-                    <fieldset> 
+                    <fieldset class="filter-price"> 
                       <legend>Стоимость в сутки (Р):</legend> 
                       <div>
                         <p>От 0 | До 3000</p>
@@ -92,11 +91,11 @@
                 <a class="arrows arrow-down" href="#"></a>
               </div>    
             </section>
-            <section class="hotels">
-                <ul>
-                    <li class="hotel item1">
+            <section>
+                <ul class="hotels">
+                    <li class="hotel">
                         <img src="img/amara.jpg" width="135" height="90" alt="photo_of_hotel_Amararesort">
-                        <div>
+                        <div class="block-info">
                           <a class="name-of-hotel" href="#">Amara Resort & Spa</a>
                         <div class="hotels-about">    
                           <span>Гостиница</span>
@@ -118,9 +117,9 @@
                           <p>Рейтинг: 8,5</p>  
                         </div>
                     </li>
-                    <li class="hotel item2">
+                    <li class="hotel">
                       <img src="img/desert.jpg" width="135" height="90" alt="photo_of_hotel_Desert" >
-                      <div>
+                      <div class="block-info">
                         <a class="name-of-hotel" href="#">Desert Quail Inn</a>
                       <div class="hotels-about">  
                         <span>Мотель</span>
@@ -140,19 +139,19 @@
                         <p>Рейтинг: 8,9</p>
                       </div>
                     </li>
-                    <li class="hotel item2">
+                    <li class="hotel">
                       <img src="img/villas.jpg" width="135" height="90" alt="photo_of_hotel_Villas">
-                      <div>
+                      <div class="block-info">
                         <a class="name-of-hotel" href="#">Villas at Poco Diablo</a>
                       <div class="hotels-about">
                         <span>Апартаменты</span>
                         <span>От 2000 Р.</span> 
-                      </div>  
-                      </div>    
+                      </div>   
                       <div class="hotels-btn">
                         <a class="details" href="#">Подробнее</a>
                         <a class="reservation" href="#">Забронировать</a>
                       </div> 
+                      </div>  
                       <div class="rating">
                         <div class="container-stars"> 
                           <span class="stars"></span>
