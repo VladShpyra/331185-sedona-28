@@ -53,20 +53,15 @@ header {
 .main-navigation a:hover {
     color: #81B3D2;
 }
-.navigation-link {
+/* .navigation-link {
     display: flex;
     justify-content: space-between;
-}
-.navigation-link li {}
-
-.navigation-link a:first-child {
-    margin-left: 72px;
-}
-.navigation-link a:last-child {
-    margin-right: 72px;
-}
-.navigation-link a:nth-child(2) {
-    margin-left: 816px;
+} */
+.navigation-link {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    grid-column-gap: 150px;
+    padding: 20px 50px;
 }
 .header-logo {
     position: absolute;
@@ -81,16 +76,22 @@ header {
     background-color: #32494E;
     background-repeat: no-repeat;
     text-align: center;
-    margin-top: 30px;
 }
 .img1{
-    margin-top: 77px;
-    margin-bottom: 53px;
+    margin-top: 75px;
+    margin-bottom: 55px;
 }
-
 
 
 /* General information */
+.start-information {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.start-information img {
+    align-self: center;
+}
 .general-information h2{
     color: var(--basic-black);
     font-style: normal;
@@ -100,7 +101,9 @@ header {
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 40px;
+    margin: 0 auto;
+    padding-top: 50px;
+    max-width: 500px;
 }
 .general-information p{
     color: var(--basic-black);
@@ -116,7 +119,6 @@ header {
 }
 .about {
     max-width: 400px;
-    height: 256px;
     background-color: #81B3D2;
 }
 .about h4 {
@@ -267,8 +269,8 @@ footer li{
     text-transform: uppercase;
     margin-right: 5px;
 }
-.copyright a:hover{
-    filter: hue-rotate(90deg);
+.copyright img:hover{
+    fill: #81B3D2;
 }
 
 
@@ -280,7 +282,6 @@ footer li{
     height: 217px;
     display: flex;
     background-image: url(../img/background-filters.png);
-    margin-top: 30px;
     color: var(--basic-white);
 }
 .filter-forms legend {
@@ -317,7 +318,9 @@ footer li{
     padding: 13px 3px;
     margin-left: 72px;
 }
-
+.container-wrapper {
+    max-width: 1050px;
+}
 .search-result{
     text-transform: uppercase;
 }
@@ -351,18 +354,10 @@ li{
 .arrow-up {
     background-image: url(../img/icon-up-dir.svg);
 }
-.arrow-up a{
-    background-image: url(../img/icon-up-dir.svg);
-}
 .arrow-down {
     background-image: url(../img/icon-down-dir.svg);
 }
-.arrow-down a{
-    background-image: url(../img/icon-down-dir.svg);
-}
-.hotel{
-    margin-top: 40px;
-}
+
 .container-stars{
     display: flex;
 }
@@ -372,6 +367,12 @@ li{
     height: 17px;
     background-image: url(../img/star.svg);
 } 
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 490px;
+}
 .rating p{
     display: inline-block;
     width: 120px;
@@ -379,9 +380,8 @@ li{
     text-transform: uppercase;
     color: #666666;
     background-color: #F2F2F2;
-    align-items: center;
     text-align: center;
-    vertical-align: center;
+
 }
 .name-of-hotel{
     color: var(--basic-black);
@@ -394,28 +394,42 @@ li{
 .name-of-hotel:hover{
     color: #81B3D2;
 }
+.hotels-about {
+    display: flex;
+    max-width: 210px;
+    justify-content: space-between;
+}
 .hotels-about span{
     text-transform: uppercase;
 }
+
 .hotel {
     display: flex;
     padding-left: 73px;
     padding-top: 30px;
     border-top: 1px solid #e5e5e5;
+    margin-top: 40px;
 }
 .hotels li:last-child {
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: 30px;
 }
 .block-info {
-    margin-left: 25px;
+    margin-left: 30px;
+}
+.hotels-btn {
+    margin-top: 10px;
 }
 .hotels-btn a {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
     line-height: 21px;
-    padding: 17px 3px;
+    padding: 3px 17px;
+    margin-top: 9px;
 }
 .details{
     display: inline-block;
@@ -427,7 +441,7 @@ li{
 }
 .reservation{
     color: var(--basic-white);
-    background-color: #766357;;
+    background-color: #766357;
 }
 .reservation:hover{
     background-color: #604E43;
@@ -440,7 +454,6 @@ li{
     margin: 0 auto;
     align-items: center;
     width: 568px;
-    height: 395px;
     margin-top: 70px;
 }
 .search-form a {
@@ -461,15 +474,9 @@ li{
     justify-content: center;
     padding-top: 55px;
 }
-.line-up {
+.line {
     width: 478px;
     display: flex;
-    margin: 55px;
-    margin-bottom: 30px;
-}
-.line-middle {
-    display: flex;
-    width: 478px;
 }
 .date {
     width: 120px;
@@ -491,6 +498,11 @@ li{
 .calendar-icon {
     border: none;
     padding-left: 13px;
+    fill: #a9a9a9;
+}
+.calendar-icon svg:hover {
+    fill: var(--basic-black);
+    cursor: pointer;
 }
 .visitors {
     font-weight: bold;
@@ -518,6 +530,7 @@ li{
 .visitors button:hover {
     color: var(--basic-black);
     font-weight: bold;
+    cursor: pointer;
 }
 .visitors input {
     text-align: center;
