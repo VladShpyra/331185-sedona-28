@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="index-page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="body-page">
     <div class="wrapper">
       <header>
         <nav class="main-navigation">
@@ -30,14 +30,17 @@
                     <ul>
                       <li>
                               <input type="checkbox" name="bassen" id="filter-bassen" checked> 
+                              <span class="check-box"></span>
                               <label for="filter-bassen">Бассейн</label>
                       </li>
                           <li>
                               <input type="checkbox" name="parking" id="filter-parking">
+                              <span class="check-box"></span>
                               <label for="filter-parking">Парковка</label>
                       </li>
                       <li>
                               <input type="checkbox" name="wifi" id="filter-wifi">
+                              <span class="check-box"></span>
                               <label for="filter-wifi">WI-FI</label>
                       </li>
                     </ul>
@@ -48,14 +51,17 @@
                     <ul>
                           <li>
                               <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                              <span class="check-box"></span>
                               <label for="filter-hotel">Гостиница</label>
                           </li>
                           <li>
                               <input type="checkbox" name="motel" id="filter-motel" checked>
+                              <span class="check-box"></span>
                               <label for="filter-motel">Мотель</label>
                           </li>
                         <li>
                               <input type="checkbox" name="apataments" id="filter-apataments" checked>
+                              <span class="check-box"></span>
                               <label for="filter-apataments">Апартаменты</label>
                         </li>
                     </ul>
@@ -64,14 +70,28 @@
                       <h2 class="visually-hidden">Фильтр цены</h2>
                     <fieldset class="filter-price"> 
                       <legend>Стоимость в сутки (Р):</legend> 
-                      <div>
-                        <p>От 0 | До 3000</p>
+                      <div class="prices">
+                        <div class="price-amount">
+                          <label class="min-price">
+                            ОТ
+                            <input type="text" name="min-price" value="0">
+                          </label>
+                        </div>
+                        <div class="price-amount">
+                          <label class="max-price">
+                            ДО
+                            <input type="text" name="max-price" value="3000">
+                          </label>
+                        </div>
                       </div>
-                      <div>
-                        <span></span>
-                        <span></span>
+                      <div class="range-controls">
+                        <div class="scale">
+                          <div class="line"></div>
+                        </div>
+                        <div class="range"></div>
+                        <div class="range range2"></div>
                       </div>
-                      <button type="submit">Показать</button>
+                      <button class="button-show" type="submit">Показать</button>
                     </fieldset>
                   </form>
             </section>
@@ -87,11 +107,11 @@
                     <li><a href="#">По рейтингу</a></li>
                   </ul>
               <div class="arrows">  
-                <a class="arrow-up" href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+                <a class="arrow-up" href="#"><svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 0L0 10H11L5.5 0Z"/>
                   </svg></a>
-                <a class="arrow-down" href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+                <a class="arrow-down" href="#"><svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 0L0 10H11L5.5 0Z"/>
                   </svg></a>
               </div>    
             </section>
@@ -169,7 +189,7 @@
         </main>
         <footer>
           <div class="footer-contact">
-          <a href="https://www.instagram.com/."><p>#visitSEDONA</p></a> 
+          <a href="https://www.instagram.com/.">#visitSEDONA</a> 
           <p>ТЕЛ: <a href="tel:+7(495) 666-01-66">+7(495) 666-01-66</a></p>
           </div>
 
