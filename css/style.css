@@ -321,7 +321,7 @@ li {
     margin-right: 55px;
     margin-top: 27px;
 }
-input[type="checkbox"] {
+.check-box-input {
     position: absolute;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -332,11 +332,12 @@ input[type="checkbox"] {
     height: 23px;
     background-image: url(../img/checkbox-off.svg);
     margin-left: 72px;
+    cursor: pointer;
 }
-input[type="checkbox"]:checked + .check-box {
+.check-box-input:checked + .check-box {
     background-image: url(../img/checkbox-on.svg);
 }
-input[type="checkbox"]:active + .check-box {
+.check-box-input:active + .check-box {
     background-image: url(../img/checkbox-on.svg);
 }
 
@@ -366,6 +367,7 @@ input[type="checkbox"]:active + .check-box {
 .filter-price legend {
     padding-top: 25px;
     padding-bottom: 15px;
+    margin: 0;
 }
 .prices {
     position: relative;
@@ -641,7 +643,7 @@ input[type="checkbox"]:active + .check-box {
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
-    padding: 30px 125px;
+    padding: 30px 139px;
 }
 .search-form a:hover {
     background-color: #604E43;
@@ -652,12 +654,18 @@ input[type="checkbox"]:active + .check-box {
 } 
 .search-form a:active {
     background-color: #503E33;
-}                                 
+}    
 .search {
+    position: absolute;
+    text-align: center;
+    max-width: 568px;
+    background: var(--basic-white);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 55px;
     padding-top: 55px;
+    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
 .line-1 {
     width: 478px;
@@ -668,15 +676,13 @@ input[type="checkbox"]:active + .check-box {
     display: flex;
     padding-top: 30px;
 }
-.line-1 input:hover,
-.line-2 input:hover {
-    background-color:#EBEBEB;
-    border:none;
+.search-form .text:hover {
+    background: #EBEBEB;
 }
-.line-1 input:active,
-.line-2 input:active {
-    background-color:#EBEBEB;
-    border:none;
+.search-form .text:focus{
+    background: var(--basic-white);
+    border:  2px solid #E5E5E5;
+    box-sizing: content-box;
 }
 .text input {                    
     background: #FFFFFF;
@@ -714,9 +720,10 @@ input[type="checkbox"]:active + .check-box {
 .calendar-icon svg:hover, :focus {
     fill: var(--basic-black);
     cursor: pointer;
+    background-color: #F2F2F2;
 }
 .calendar-icon svg:active {
-    fill: #81B3D2;;
+    fill: #81B3D2;
 }
 .visitors {
     font-weight: bold;
@@ -783,12 +790,10 @@ input[type="checkbox"]:active + .check-box {
     border: none;
     margin-top: 40px;
 }
-.search-button:hover {
-    opacity: 0.2;
+.search-button:hover, :focus {  
+    background-color: #669EC0;
+    color: rgba(255,255,255,0.3);
     cursor: pointer;
-}
-.search-button:focus {
-    background-color: #5496BD;
 }
 
 
