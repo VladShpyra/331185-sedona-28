@@ -18,33 +18,35 @@
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li
           </ul>
         </nav>
       </header>
         <main>
             <section>
               <form class="filter-forms" action="https://echo.htmlacademy.ru" method="get">
-                <fieldset class="checkbox-left">
+                <div class="checkboxes">
+                  <fieldset class="checkbox-left">
                     <legend>Инфраструктура:</legend>
                     <ul>
                       <li>
-                              <input class="check-box-input" type="checkbox" name="bassen" id="filter-bassen" checked> 
-                              <span class="check-box"></span>
-                              <label for="filter-bassen">Бассейн</label>
+                            <input class="check-box-input" type="checkbox" name="bassen" id="filter-bassen" checked> 
+                            <span class="check-box"></span>
+                            <label for="filter-bassen">Бассейн</label>
                       </li>
                           <li>
-                              <input class="check-box-input" type="checkbox" name="parking" id="filter-parking">
-                              <span class="check-box"></span>
-                              <label for="filter-parking">Парковка</label>
+                            <input class="check-box-input" type="checkbox" name="parking" id="filter-parking">
+                            <span class="check-box"></span>
+                            <label for="filter-parking">Парковка</label>
                       </li>
                       <li>
-                              <input class="check-box-input" type="checkbox" name="wifi" id="filter-wifi">
-                              <span class="check-box"></span>
-                              <label for="filter-wifi">WI-FI</label>
+                            <input class="check-box-input" type="checkbox" name="wifi" id="filter-wifi">
+                            <span class="check-box"></span>
+                            <label for="filter-wifi">WI-FI</label>
                       </li>
                     </ul>
                 </fieldset>
+              
           
                 <fieldset class="checkbox-right">
                     <legend>Тип жилья:</legend>
@@ -65,8 +67,8 @@
                               <label for="filter-apataments">Апартаменты</label>
                         </li>
                     </ul>
-                </fieldset>
-          
+                  </fieldset>
+                </div>
                       <h2 class="visually-hidden">Фильтр цены</h2>
                     <fieldset class="filter-price"> 
                       <legend>Стоимость в сутки (Р):</legend> 

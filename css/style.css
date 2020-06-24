@@ -51,7 +51,8 @@ a , button, input {
     line-height: 26px;
     text-decoration: none;
 }
-.main-navigation a:hover, a:focus {
+.main-navigation a:hover, 
+.main-navigation a:focus {
     color: #81B3D2;
 }
 .navigation-link a:active {
@@ -227,9 +228,8 @@ footer li{
     font-size: 21px;
     color: var(--basic-black);
 }
-.footer-contact p:first-child:hover,
-p:first-child:focus,
-.footer-contact a:hover, a:focus {
+.footer-contact a:hover, 
+.footer-contact a:focus {
     color: #5496BD;
 }
 .social {
@@ -275,7 +275,8 @@ p:first-child:focus,
     text-transform: uppercase;
     margin-right: 5px;
 }
-.copyright a:hover, a:focus {
+.copyright a:hover,
+.copyright a:focus {
     fill: #81B3D2;
 }
 .copyright svg:active{
@@ -311,6 +312,11 @@ li {
 .filter-forms input {
     outline: none   ;
 }
+.checkboxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .checkbox-left {
     border: none;
     font-style: normal;
@@ -318,8 +324,6 @@ li {
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
-    margin-right: 55px;
-    margin-top: 27px;
 }
 .check-box-input {
     position: absolute;
@@ -350,8 +354,6 @@ li {
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
-    margin-right: 55px;
-    margin-top: 27px;
 }
 .checkbox-right li,
 .checkbox-left li {
@@ -362,7 +364,7 @@ li {
 }
 .filter-price {
     border: none;
-    margin-left: 255px;
+    margin-left: 325px;
 }
 .filter-price legend {
     padding-top: 25px;
@@ -466,6 +468,7 @@ li {
     display: flex;
     padding-top: 8px;
     padding-bottom: 10px;
+    padding-right: 70px;
 }
 .search-result li {
     align-self: center;
@@ -478,7 +481,7 @@ li {
     display: flex;
     justify-content: flex-start;
     padding-left: 45px;
-    width: 70%;
+    flex-grow: 1;
 }
 .search-parameters .active{
     color: #81B3D2;
@@ -511,23 +514,22 @@ li {
 }
 .arrows {
     display: flex;
-    justify-content: flex-end;
-    background-repeat: no-repeat;
     align-self: center;
-    fill: #cacaca;
 }
 .arrow-up {
     fill: #cacaca;
     margin-right: 15px;
 }
-.arrow-up:hover, :focus {
+.arrow-up:hover, 
+.arrow-up:focus {
     fill: var(--basic-black);
 }
 .arrow-down {
    fill: #81b3d2; 
    transform: rotateX(180deg);
 }
-.arrow-down:hover, :focus {
+.arrow-down:hover, 
+.arrow-down:focus {
     fill: var(--basic-black);
 }
 
@@ -546,7 +548,6 @@ li {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    flex-grow: 1;
     padding-right: 70px;
 }
 .rating p{
@@ -567,7 +568,8 @@ li {
     line-height: 26px;
     text-transform: uppercase;
 }
-.name-of-hotel:hover, :focus{
+.name-of-hotel:hover, 
+.name-of-hotel:focus{
     color: #81B3D2;
 }
 .hotels-about {
@@ -592,6 +594,7 @@ li {
 }
 .block-info {
     margin-left: 30px;
+    flex-grow: 1;
 }
 .hotels-btn {
     margin-top: 10px;
@@ -619,11 +622,9 @@ li {
     color: var(--basic-white);
     background-color: #766357;
 }
-.reservation:hover{
+.reservation:hover, 
+.reservation:focus{
     background-color: #604E43;
-}
-.reservation:focus {
-    background-color: #503E33;
 }
 
 
@@ -645,13 +646,10 @@ li {
     text-transform: uppercase;
     padding: 30px 139px;
 }
-.search-form a:hover {
-    background-color: #604E43;
-    color: ;
-}
+.search-form a:hover, 
 .search-form a:focus {
-    background-color: #503E33;
-} 
+    background-color: #604E43;
+}
 .search-form a:active {
     background-color: #503E33;
 }    
@@ -679,16 +677,12 @@ li {
 .search-form .text:hover {
     background: #EBEBEB;
 }
-.search-form .text:focus{
-    background: var(--basic-white);
-    border:  2px solid #E5E5E5;
-    box-sizing: content-box;
-}
-.text input {                    
+
+/* .text input {                    
     background: #FFFFFF;
     outline: none;
     border: 2px solid #E5E5E5;
-}
+} */
 .date {
     width: 120px;
     font-weight: 700;
@@ -717,7 +711,8 @@ li {
     padding-left: 13px;
     fill: #a9a9a9;
 }
-.calendar-icon svg:hover, :focus {
+.calendar-icon svg:hover, 
+.calendar-icon svg:focus {
     fill: var(--basic-black);
     cursor: pointer;
     background-color: #F2F2F2;
@@ -790,7 +785,7 @@ li {
     border: none;
     margin-top: 40px;
 }
-.search-button:hover, :focus {  
+.search-button:hover, .search-button:focus {  
     background-color: #669EC0;
     color: rgba(255,255,255,0.3);
     cursor: pointer;
