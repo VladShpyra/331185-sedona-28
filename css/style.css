@@ -243,6 +243,7 @@ footer li{
 }    
 .social-icon{
     display: inline-block;
+    vertical-align: middle;
     height: 46px;
     width: 48px;
     margin-top: 36px;
@@ -344,13 +345,13 @@ li {
     -moz-appearance: none;
 }
 .check-box {
-    /* position: absolute; */
     width: 26px;
     height: 23px;
     background-image: url(../img/checkbox-off.svg);
     background-repeat: no-repeat;
     margin-right: 20px;
     display: inline-block;
+    vertical-align: middle;
     cursor: pointer;
 }
 .check-box-input:checked + label .check-box {
@@ -408,6 +409,7 @@ li {
 }
 .min-price {
     display: inline-block;
+    vertical-align: middle;
     width: 162px;
     font-size: 14px;
     line-height: 38px;
@@ -417,6 +419,7 @@ li {
 }
 .price-amount label {
     display: inline-block;
+    vertical-align: middle;
     width: 162px;
     font-size: 14px;
     line-height: 38px;
@@ -572,6 +575,7 @@ li {
 }
 .rating p{
     display: inline-block;
+    vertical-align: middle;
     width: 120px;
     height: 27px;
     text-transform: uppercase;
@@ -634,6 +638,7 @@ li {
     display: inline-block;
     color: var(--basic-white);
     background-color: #81B3D2;
+    vertical-align: middle;
 }
 .details:hover, 
 .details:focus {
@@ -673,6 +678,7 @@ li {
     text-transform: uppercase;
     padding: 30px 139px;
     display: inline-block;
+    vertical-align: middle;
 }
 .search-form a:hover, 
 .search-form a:focus {
