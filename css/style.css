@@ -22,7 +22,7 @@
     background-color: var(--basic-white);
     box-shadow: 0px 10px 10px #888888;
 } 
-ul{
+ul, h2{
     margin: 0;
     padding: 0;
 }
@@ -62,7 +62,7 @@ a , button, input {
     display: grid;
     grid-template-columns: auto 1fr auto auto;
     grid-column-gap: 150px;
-    padding: 20px 50px;
+    padding: 15px 72px;
 }
 .header-logo {
     position: absolute;
@@ -104,12 +104,12 @@ a , button, input {
     align-items: center;
     text-transform: uppercase;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 40px;
     max-width: 500px;
 }
 .general-information p{
     color: var(--basic-black);
-    font-size: 14px;
+    margin-top: 30px;
 }
 .items-about{
     display: flex;
@@ -118,12 +118,14 @@ a , button, input {
 .about {
     max-width: 400px;
     background-color: #81B3D2;
+    
 }
 .about h4 {
     color: var(--basic-white);
     text-transform: uppercase;
     font-size: 21px;
     line-height: 21px;
+    margin-top: 40px;
 }
 .about p{
     color: var(--basic-white);
@@ -132,8 +134,8 @@ a , button, input {
 }
 .list-items{
     display: flex;
-    margin-top: 50px;
-    padding-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 .list-items h3{
     color: var(--basic-black);
@@ -157,6 +159,7 @@ a , button, input {
     margin: 0 auto;
     width: 75px;
     height: 77px;
+    margin-top: 20px;
 }
 .icon-1{
     background-image: url(../img/icon-1.svg);
@@ -180,6 +183,7 @@ a , button, input {
 .description-bottom li {
     margin: 0 auto;
 }
+
 .description h4{
     font-weight: bold;
     font-size: 21px;
@@ -190,6 +194,7 @@ a , button, input {
 .title-of-search {
     text-transform: uppercase;
     text-align: center;
+    padding-top: 20px;
 }
 .title-of-search h2{
     color: var(--basic-black);
@@ -197,6 +202,7 @@ a , button, input {
     font-weight: bold;
     font-size: 30px;
     line-height: 24px;
+    margin-top: 55px;
 }
 
 
@@ -220,7 +226,6 @@ footer li{
     color: var(--basic-black);
     font-weight: bold;
     font-size: 21px;
-    line-height: 26px;
     text-transform: uppercase;
     padding-top: 20px;
 }
@@ -278,7 +283,7 @@ footer li{
 .copyright a:focus {
     fill: #81B3D2;
 }
-.copyright svg:active{
+.copyright a:active{
     fill: #BDBBBC;
 }
 
@@ -364,6 +369,7 @@ li {
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
+    margin-left: 80px;
 }
 .checkbox-right li,
 .checkbox-left li {
@@ -375,10 +381,10 @@ li {
 }
 .filter-price {
     border: none;
-    margin-left: 325px;
+    margin-left: 340px;
 }
 .filter-price legend {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     margin: 0;
 }
 .prices {
@@ -473,11 +479,11 @@ li {
     color: var(--basic-black);
     cursor: pointer;
 }
-.search-result{
+.search-result {
     text-transform: uppercase;
     display: flex;
-    padding-top: 8px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 35px;
     padding-right: 70px;
 }
 .search-result li {
@@ -598,8 +604,8 @@ li {
 .hotel {
     display: flex;
     padding-left: 73px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 28px;
+    padding-bottom: 25px;
     border-top: 1px solid #e5e5e5;
 }
 .hotels li:last-child {
@@ -629,8 +635,12 @@ li {
     color: var(--basic-white);
     background-color: #81B3D2;
 }
-.details a:hover,{
+.details:hover, 
+.details:focus {
     background-color: #669EC0;
+}
+.details:active{
+    background: #5496BD;
 }
 .reservation{
     color: var(--basic-white);
@@ -644,6 +654,9 @@ li {
 
 
 /* Modal window */
+/* #search {
+    display: none;
+} */
 .search-form {
     background-color: var(--basic-white);
     margin: 0 auto;
@@ -677,7 +690,7 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 55px;
-    padding-top: 55px;
+    padding-top: 50px;
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
 .line-1 {
@@ -693,11 +706,6 @@ li {
     background: #EBEBEB;
 }
 
-/* .text input {                    
-    background: #FFFFFF;
-    outline: none;
-    border: 2px solid #E5E5E5;
-} */
 .date {
     width: 120px;
     font-weight: 700;
@@ -726,13 +734,13 @@ li {
     padding-left: 13px;
     fill: #a9a9a9;
 }
-.calendar-icon svg:hover, 
-.calendar-icon svg:focus {
+.calendar-icon:hover,
+.calendar-icon:focus {
     fill: var(--basic-black);
     cursor: pointer;
     background-color: #F2F2F2;
 }
-.calendar-icon svg:active {
+.calendar-icon:active {
     fill: #81B3D2;
 }
 .visitors {
