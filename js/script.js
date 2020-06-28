@@ -15,14 +15,14 @@ minus.onclick = function () {
     quantity.value  = counter;
 }
 
-// let modal = document.getElementById('search');
-// let btn = document.getElementById("my-btn");
+let modal = document.getElementById('search');
+let btn = document.getElementById("my-btn");
 
-// btn.onclick = function() {
-//     modal.style.display = "block";
-//   }
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//     }
-// }
+btn.onclick = function() {
+    modal.style.display = "flex";
+  }
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

@@ -665,9 +665,9 @@ li {
 
 
 /* Modal window */
-/* #search {
+#search {
     display: none;
-} */
+}
 .search-form {
     background-color: var(--basic-white);
     margin: 0 auto;
