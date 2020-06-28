@@ -22,7 +22,7 @@
     background-color: var(--basic-white);
     box-shadow: 0px 10px 10px #888888;
 } 
-ul, h2{
+ul, h2, p, h4 {
     margin: 0;
     padding: 0;
 }
@@ -36,10 +36,6 @@ img {
 a , button, input {
     outline: none;
 }
-
-
-  
-
 
 /*Main-navigation*/
 .main-navigation a {
@@ -74,7 +70,7 @@ a , button, input {
 .start-information { 
     display: flex;
     flex-direction: column;
-    padding-bottom: 75px;
+    padding-bottom: 83px;
     padding-top: 75px;
     background-image: url(../img/main_bg.jpg);
     background-color: #32494E;
@@ -85,7 +81,7 @@ a , button, input {
     align-self: center;
 }
 .start-information .img2 {
-    padding-top: 60px;
+    padding-top: 55px;
 }
 
 
@@ -94,7 +90,6 @@ a , button, input {
     font-weight: normal;
     text-transform: uppercase;
     text-align: center;
-    line-height: 26px;
 }
 .general-information h2{
     color: var(--basic-black);
@@ -109,11 +104,11 @@ a , button, input {
 }
 .general-information p{
     color: var(--basic-black);
-    margin-top: 30px;
+    margin-top: 48px;
 }
 .items-about{
     display: flex;
-    padding-top: 50px;
+    margin-top: 55px;
 }
 .about {
     max-width: 400px;
@@ -125,17 +120,18 @@ a , button, input {
     text-transform: uppercase;
     font-size: 21px;
     line-height: 21px;
-    margin-top: 40px;
+    margin-top: 46px;
 }
 .about p{
     color: var(--basic-white);
     padding-left: 50px;
     padding-right: 50px;
+    margin-top: 23px;
 }
 .list-items{
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 57px;
+    padding-bottom: 83px;
 }
 .list-items h3{
     color: var(--basic-black);
@@ -149,6 +145,7 @@ a , button, input {
     max-width: 295px;
 }
 .list-items p{
+    margin-top: 28px;
     color: #333333;
 }
 .item{
@@ -159,7 +156,6 @@ a , button, input {
     margin: 0 auto;
     width: 75px;
     height: 77px;
-    margin-top: 20px;
 }
 .icon-1{
     background-image: url(../img/icon-1.svg);
@@ -178,11 +174,16 @@ a , button, input {
 .description-bottom {
     display: flex;
     background: #EEEEEE;
-    height: 256px;
+    padding-top: 43px;
+    padding-bottom: 54px;
 }
 .description-bottom li {
     margin: 0 auto;
 }
+.description-bottom p {
+    margin-top: 3px;
+    padding-bottom: 21px;
+} 
 
 .description h4{
     font-weight: bold;
@@ -190,19 +191,22 @@ a , button, input {
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 25px;
 }
 .title-of-search {
     text-transform: uppercase;
     text-align: center;
-    padding-top: 20px;
+    line-height: 24px;
 }
 .title-of-search h2{
     color: var(--basic-black);
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
-    line-height: 24px;
-    margin-top: 55px;
+    padding-top: 35px;
+}
+.title-of-search p {
+    padding: 33px 0px 47px;
 }
 
 
@@ -214,9 +218,12 @@ a , button, input {
 
 /* FOOTER */
 footer {
+    background-color: var(--basic-white);
     display: flex;
     justify-content: space-around;
+    align-items: center;
     height: 120px;
+    width: 100%;
 }
 footer li{
     list-style: none;
@@ -227,7 +234,6 @@ footer li{
     font-weight: bold;
     font-size: 21px;
     text-transform: uppercase;
-    padding-top: 20px;
 }
 .footer-contact a{
     font-size: 21px;
@@ -244,9 +250,8 @@ footer li{
 .social-icon{
     display: inline-block;
     vertical-align: middle;
-    height: 46px;
-    width: 48px;
-    margin-top: 36px;
+    height: 48px;
+    width: 46px;
     margin-left: 5px;
     background-color: #81B3D2;
     background-repeat: no-repeat;
@@ -308,7 +313,7 @@ li {
     padding-top: 25px;
     padding-bottom: 10px;
     max-width: 1055px;
-    margin: 0 auto;
+    margin: 0 60px;
 }
 .filter-forms legend {
     font-weight: bold;
@@ -372,7 +377,7 @@ li {
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
-    margin-left: 80px;
+    margin-left: 95px;
 }
 .checkbox-right li,
 .checkbox-left li {
@@ -384,7 +389,7 @@ li {
 }
 .filter-price {
     border: none;
-    margin-left: 340px;
+    margin-left: 353px;
 }
 .filter-price legend {
     padding-bottom: 10px;
@@ -431,10 +436,8 @@ li {
 }
 .price-amount input {
     width: 40px;
-    height: 12px;
     font-size: 14px;
     line-height: 38px;
-    margin: 0px;
     cursor: pointer;
     background: none;
     border: none;
@@ -442,7 +445,7 @@ li {
 }
 .range-controls {
     position: relative;
-    margin-top: 22px;
+    margin-top: 18px;
 }
 .scale {
     height: 2px;
@@ -476,7 +479,7 @@ li {
     border: 2px solid white;
     color: var(--basic-white);
     padding: 6px 33px;
-    margin-top: 32px;
+    margin-top: 35px;
     margin-left: 85px;
 }
 .button-show:hover {
@@ -568,6 +571,7 @@ li {
     width: 19px;
     height: 17px;
     background-image: url(../img/star.svg);
+    margin-left: 5px;
 } 
 .rating {
     display: flex;
@@ -669,7 +673,6 @@ li {
     margin: 0 auto;
     text-align: center;
     width: 568px;
-    margin-top: 70px;
 }
 .search-form a {
     color: var(--basic-white);
@@ -704,11 +707,13 @@ li {
 .line-1 {
     width: 478px;
     display: flex;
+    text-align: left;
 }
 .line-2 {
     width: 478px;
     display: flex;
-    padding-top: 30px;
+    padding-top: 19px;
+    text-align: left;
 }
 .search-form .text:hover {
     background: #EBEBEB;
@@ -753,7 +758,7 @@ li {
 }
 .visitors {
     font-weight: bold;
-    padding-top: 30px;
+    padding-top: 25px;
     display: flex;
     width: 458px;
 
@@ -814,7 +819,7 @@ li {
     width: 458px;
     height: 58px;
     border: none;
-    margin-top: 40px;
+    margin-top: 54px;
 }
 .search-button:hover, .search-button:focus {  
     background-color: #669EC0;
