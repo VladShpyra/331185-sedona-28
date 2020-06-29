@@ -217,13 +217,21 @@ a , button, input {
 
 
 /* FOOTER */
+ .footer-wrapper {
+    position: relative;
+    width: 100%;
+}
 footer {
+    position: absolute;
+    bottom: 5px;
     background-color: var(--basic-white);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 120px;
+    padding-top: 23px;
+    padding-bottom: 32px;
     width: 100%;
+    opacity: 0.9;
 }
 footer li{
     list-style: none;
@@ -233,6 +241,7 @@ footer li{
     color: var(--basic-black);
     font-weight: bold;
     font-size: 21px;
+    line-height: 26px;
     text-transform: uppercase;
 }
 .footer-contact a{
@@ -245,14 +254,14 @@ footer li{
 }
 .social {
     display: flex;
-    justify-content: space-around;
+    margin-right: 5px;
 }    
 .social-icon{
     display: inline-block;
     vertical-align: middle;
     height: 48px;
     width: 46px;
-    margin-left: 5px;
+    margin-right: 5px;
     background-color: #81B3D2;
     background-repeat: no-repeat;
     background-position: center;
@@ -294,6 +303,7 @@ footer li{
 }
 iframe {
     width: 100%;
+    min-height: 590px;
 }
 
 
