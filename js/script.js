@@ -16,7 +16,7 @@ minus.onclick = function () {
 }
 
 let modal = document.getElementById('search');
-let btn = document.getElementById("my-btn");
+let btn = document.getElementById('my-btn');
 
 btn.onclick = function() {
     modal.style.display = "flex";

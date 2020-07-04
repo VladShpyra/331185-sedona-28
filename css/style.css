@@ -21,6 +21,7 @@
     margin: 0 auto;
     background-color: var(--basic-white);
     box-shadow: 0px 10px 10px #888888;
+    position: relative;
 } 
 ul, h2, p, h4 {
     margin: 0;
@@ -35,6 +36,9 @@ img {
 }
 a , button, input {
     outline: none;
+}
+* {
+    box-sizing: border-box;
 }
 
 /*Main-navigation*/
@@ -57,8 +61,11 @@ a , button, input {
 .navigation-link {
     display: grid;
     grid-template-columns: auto 1fr auto auto;
-    grid-column-gap: 150px;
+    grid-column-gap: 135px;
     padding: 15px 72px;
+}
+.navigation-link li:nth-child(3) {
+    padding-right: 12px;
 }
 .header-logo {
     position: absolute;
@@ -124,8 +131,8 @@ a , button, input {
 }
 .about p{
     color: var(--basic-white);
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 49px;
+    padding-right: 47px;
     margin-top: 23px;
 }
 .list-items{
@@ -172,9 +179,12 @@ a , button, input {
 }
 
 .description-bottom {
-    display: flex;
+    display: grid;
+    grid-template-columns: 219px 261px 247px;
+    grid-gap: 153px;
     background: #EEEEEE;
-    padding-top: 43px;
+    padding-left: 91px;
+    padding-top: 46px;
     padding-bottom: 54px;
 }
 .description-bottom li {
@@ -206,7 +216,7 @@ a , button, input {
     padding-top: 35px;
 }
 .title-of-search p {
-    padding: 33px 0px 47px;
+    padding: 33px 0px 44px;
 }
 
 
@@ -221,9 +231,9 @@ a , button, input {
     position: relative;
     width: 100%;
 }
-footer {
+footer.index-page-footer {
     position: absolute;
-    bottom: 5px;
+    bottom: 0px;
     background-color: var(--basic-white);
     display: flex;
     justify-content: space-around;
@@ -232,6 +242,15 @@ footer {
     padding-bottom: 32px;
     width: 100%;
     opacity: 0.9;
+}
+footer.catalog-page {
+    background-color: var(--basic-white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 23px;
+    padding-bottom: 32px;
+    width: 100%;
 }
 footer li{
     list-style: none;
@@ -243,10 +262,18 @@ footer li{
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
+    text-align: center;
+    padding-left: 35px;
+}
+.footer-contact p {
+    padding-bottom: 2px;
 }
 .footer-contact a{
     font-size: 21px;
     color: var(--basic-black);
+    display: inline-block;
+    vertical-align: initials;
+    margin-bottom: 13px;
 }
 .footer-contact a:hover, 
 .footer-contact a:focus {
@@ -289,10 +316,12 @@ footer li{
 .copyright {
     display: flex;
     align-items: center;
+    padding-right: 49px;
+    padding-top: 4px;
 }
 .copyright p {
     text-transform: uppercase;
-    margin-right: 5px;
+    margin-right: 9px;
 }
 .copyright a:hover,
 .copyright a:focus {
@@ -330,23 +359,24 @@ li {
     font-size: 16px;
     line-height: 21px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .filter-forms .checkbox-left label,
 .filter-forms .checkbox-right label {
     cursor: pointer;
 }
 .filter-forms input {
-    outline: none   ;
+    outline: none;
 }
 .checkboxes {
     display: flex;
     justify-content: space-between;
     max-width: 390px;
-    width: 100%
+    width: 100%;
+    padding-bottom: 12px;
 }
 .checkboxes label {
     display: flex;
-    align-items: center;
 }
 .checkbox-left {
     border: none;
@@ -355,6 +385,7 @@ li {
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
+    margin: 0;
 }
 .check-box-input {
     position: absolute;
@@ -366,9 +397,7 @@ li {
     height: 23px;
     background-image: url(../img/checkbox-off.svg);
     background-repeat: no-repeat;
-    margin-right: 20px;
-    display: inline-block;
-    vertical-align: middle;
+    margin-right: 11px;
     cursor: pointer;
 }
 .check-box-input:checked + label .check-box {
@@ -389,26 +418,37 @@ li {
     text-transform: uppercase;
     margin-left: 95px;
 }
+.checkbox-right .check-box {
+    margin-right: 16px;
+}
 .checkbox-right li,
 .checkbox-left li {
-    padding: 13px 3px;
-
+    padding: 0 3px;
+}
+.checkbox-left li:not(:first-child) {
+    margin-top: 23px;
+}
+.checkbox-right li:not(:first-child) {
+    margin-top: 23px;
+}
+.checkboxes legend {
+    margin-bottom: 22px;
 }
 .container-wrapper {
     max-width: 1050px;
 }
 .filter-price {
     border: none;
-    margin-left: 353px;
+    margin-left: 350px;
 }
 .filter-price legend {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     margin: 0;
 }
 .prices {
     position: relative;
     width: 317px;
-    height: 30px;
+    height: 36px;
     border: 2px solid white;
     border-radius: 2px;
     display: flex;
@@ -455,7 +495,7 @@ li {
 }
 .range-controls {
     position: relative;
-    margin-top: 18px;
+    margin-top: 20px;
 }
 .scale {
     height: 2px;
@@ -488,11 +528,12 @@ li {
     background-color: transparent;
     border: 2px solid white;
     color: var(--basic-white);
-    padding: 6px 33px;
-    margin-top: 35px;
+    padding: 8px 33px;
+    margin-top: 33px;
     margin-left: 85px;
 }
-.button-show:hover {
+.button-show:hover,
+.button-show:focus {
     background-color: var(--basic-white);
     color: var(--basic-black);
     cursor: pointer;
@@ -501,11 +542,8 @@ li {
     text-transform: uppercase;
     display: flex;
     padding-top: 30px;
-    padding-bottom: 35px;
+    padding-bottom: 31px;
     padding-right: 70px;
-}
-.search-result li {
-    align-self: center;
 }
 .search-result > p,a{
     font-size: 12px;
@@ -546,17 +584,21 @@ li {
     font-size: 12px;
     line-height: 18px;
 }
-.search-parameters li {
-    padding-right: 30px;
-
+.search-parameters li:first-child {
+    padding-right: 40px;
+}
+.search-parameters li:nth-child(2), 
+.search-parameters li:nth-child(3) {
+    padding-right: 34px;
 }
 .arrows {
     display: flex;
     align-self: center;
+    margin-top: 6px;
 }
 .arrow-up {
     fill: #cacaca;
-    margin-right: 15px;
+    margin-right: 12px;
 }
 .arrow-up:hover, 
 .arrow-up:focus {
@@ -565,6 +607,7 @@ li {
 .arrow-down {
    fill: #81b3d2; 
    transform: rotateX(180deg);
+   margin-right: 2px;
 }
 .arrow-down:hover, 
 .arrow-down:focus {
@@ -576,8 +619,7 @@ li {
     display: flex;
 }
 .stars{
-    margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     width: 19px;
     height: 17px;
     background-image: url(../img/star.svg);
@@ -624,13 +666,14 @@ li {
 .hotel {
     display: flex;
     padding-left: 73px;
-    padding-top: 28px;
+    padding-top: 31px;
     padding-bottom: 25px;
     border-top: 1px solid #e5e5e5;
 }
 .hotels li:last-child {
     border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
+    padding-top: 32px;
 }
 .block-info {
     margin-left: 30px;
@@ -648,7 +691,7 @@ li {
     font-size: 14px;
     line-height: 21px;
     padding: 3px 17px;
-    margin-top: 9px;
+    margin-top: 5px;
 }
 .details{
     display: inline-block;
@@ -711,7 +754,7 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 55px;
-    padding-top: 50px;
+    padding-top: 54px;
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
 .line-1 {
@@ -722,13 +765,15 @@ li {
 .line-2 {
     width: 478px;
     display: flex;
-    padding-top: 19px;
+    padding-top: 30px;
     text-align: left;
 }
 .search-form .text:hover {
     background: #EBEBEB;
 }
-
+.search-form .text:hover~.calendar-icon {
+    background: #EBEBEB;
+}
 .date {
     width: 120px;
     font-weight: 700;
@@ -741,11 +786,11 @@ li {
     box-sizing: border-box;
 }
 .text {
-    width: 290px;
+    width: 302px;
     height: 38px;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 10px;
+    padding-left: 11px;
     border: none;
     background-color: #F2F2F2;
     text-transform: uppercase;
@@ -755,6 +800,7 @@ li {
     border: none;
     background-color:#F2F2F2;
     padding-left: 13px;
+    padding-top: 7px;
     fill: #a9a9a9;
 }
 .calendar-icon:hover,
@@ -768,7 +814,7 @@ li {
 }
 .visitors {
     font-weight: bold;
-    padding-top: 25px;
+    padding-top: 30px;
     display: flex;
     width: 458px;
 
@@ -799,15 +845,13 @@ li {
     color: #81B3D2;
 }
 .adult {
-    padding-left: 10px;
-    padding-right: 30px;
+    padding-right: 41px;
     align-self: center;
 }
 .children {
-    padding-left: 10px;
+    padding-left: 60px;
     padding-right: 30px;
     align-self: center;
-    margin-left: 50px; 
 }
 .minus {
     width: 38px;
