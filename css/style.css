@@ -127,13 +127,13 @@ a , button, input {
     text-transform: uppercase;
     font-size: 21px;
     line-height: 21px;
-    margin-top: 46px;
+    margin-top: 44px;
 }
 .about p{
     color: var(--basic-white);
     padding-left: 49px;
     padding-right: 47px;
-    margin-top: 23px;
+    margin-top: 26px;
 }
 .list-items{
     display: flex;
@@ -173,22 +173,35 @@ a , button, input {
 }
 .icon-3{
     background-image: url(../img/icon-3.svg);
+    margin-left: 116px;
 }   
 .description-top {
     display: flex;
 }
-
+.about-right {
+    max-width: 400px;
+    background-color: #81B3D2;
+    
+}
+.about-right h4 {
+    color: var(--basic-white);
+    margin-top: 47px;
+}
+.about-right p{
+    color: var(--basic-white);
+    padding-left: 49px;
+    padding-right: 47px;
+    margin-top: 26px;
+}
 .description-bottom {
-    display: grid;
-    grid-template-columns: 219px 261px 247px;
-    grid-gap: 153px;
+    display: flex;
     background: #EEEEEE;
-    padding-left: 91px;
     padding-top: 46px;
     padding-bottom: 54px;
 }
 .description-bottom li {
     margin: 0 auto;
+    flex-basis: 261px;
 }
 .description-bottom p {
     margin-top: 3px;
@@ -201,7 +214,7 @@ a , button, input {
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
 }
 .title-of-search {
     text-transform: uppercase;
@@ -239,7 +252,7 @@ footer.index-page-footer {
     justify-content: space-around;
     align-items: center;
     padding-top: 23px;
-    padding-bottom: 32px;
+    padding-bottom: 30px;
     width: 100%;
     opacity: 0.9;
 }
@@ -352,7 +365,7 @@ li {
     padding-top: 25px;
     padding-bottom: 10px;
     max-width: 1055px;
-    margin: 0 60px;
+    margin: 0 59px;
 }
 .filter-forms legend {
     font-weight: bold;
@@ -397,7 +410,7 @@ li {
     height: 23px;
     background-image: url(../img/checkbox-off.svg);
     background-repeat: no-repeat;
-    margin-right: 11px;
+    margin-right: 13px;
     cursor: pointer;
 }
 .check-box-input:checked + label .check-box {
@@ -416,7 +429,7 @@ li {
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
-    margin-left: 95px;
+    margin-left: 96px;
 }
 .checkbox-right .check-box {
     margin-right: 16px;
@@ -433,6 +446,7 @@ li {
 }
 .checkboxes legend {
     margin-bottom: 22px;
+    margin-left: 1px;
 }
 .container-wrapper {
     max-width: 1050px;
@@ -482,7 +496,12 @@ li {
     line-height: 38px;
     cursor: pointer;
     color: var(--basic-white);
-    text-align: center;
+}
+.min-price {
+    margin-left: 14px;
+}
+.max-price {
+    margin-left: 36px;
 }
 .price-amount input {
     width: 40px;
@@ -617,9 +636,9 @@ li {
 
 .container-stars{
     display: flex;
+    margin-bottom: 47px;
 }
 .stars{
-    margin-bottom: 50px;
     width: 19px;
     height: 17px;
     background-image: url(../img/star.svg);
@@ -629,13 +648,12 @@ li {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-right: 70px;
+    padding-right: 71px;
 }
 .rating p{
     display: inline-block;
     vertical-align: middle;
-    width: 120px;
-    height: 27px;
+    padding: 3px 12px;
     text-transform: uppercase;
     color: #666666;
     background-color: #F2F2F2;
@@ -649,6 +667,9 @@ li {
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
+    display: inline-block;
+    margin-top: -7px;
+    margin-bottom: 7px;
 }
 .name-of-hotel:hover, 
 .name-of-hotel:focus{
@@ -666,21 +687,21 @@ li {
 .hotel {
     display: flex;
     padding-left: 73px;
-    padding-top: 31px;
-    padding-bottom: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-top: 1px solid #e5e5e5;
 }
 .hotels li:last-child {
     border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 24px;
-    padding-top: 32px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 .block-info {
     margin-left: 30px;
     flex-grow: 1;
 }
 .hotels-btn {
-    margin-top: 10px;
+    margin-top: 11px;
 }
 .hotels-btn a {
     display: inline-block;
@@ -849,7 +870,7 @@ li {
     align-self: center;
 }
 .children {
-    padding-left: 60px;
+    padding-left: 54px;
     padding-right: 30px;
     align-self: center;
 }
