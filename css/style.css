@@ -668,8 +668,9 @@ li {
     line-height: 26px;
     text-transform: uppercase;
     display: inline-block;
+    vertical-align: middle;
     margin-top: -7px;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
 }
 .name-of-hotel:hover, 
 .name-of-hotel:focus{
