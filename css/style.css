@@ -102,7 +102,7 @@ a , button, input {
     flex-direction: column;
     padding-bottom: 83px;
     padding-top: 75px;
-    background-image: url(../img/main_bg.jpg);
+    background-image: url(../img/main-bg.jpg);
     background-color: var(--background-color-start-information);
     background-repeat: no-repeat;
     text-align: center;
@@ -187,6 +187,7 @@ a , button, input {
 .item::before {
     content: "";
     display: inline-block;
+    vertical-align: baseline;
     background-repeat: no-repeat;
     margin: 0 auto;
     width: 75px;
