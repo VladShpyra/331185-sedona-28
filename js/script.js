@@ -19,10 +19,10 @@ let modal = document.getElementById('search');
 let btn = document.getElementById('my-btn');
 
 btn.onclick = function() {
-    modal.style.display = "flex";
+    modal.style.display = 'flex';
   }
 window.onclick = function(event) {
     if (event.target == modal) {
-        modal.style.display = "none";
+        modal.style.display = 'none';
     }
 }

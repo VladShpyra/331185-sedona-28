@@ -16,11 +16,13 @@
     --b-c-search-form-hover: #EBEBEB;
     --b-c-search-form-text: #F2F2F2;
     --box-shadow-body-page: #888888;
+    --box-shadow-range: rgba(0, 1, 1, 0.2);
     --color-search-form: #a9a9a9;
     --navigation-link-active: #b3b3b3;
     --color-arrow-up: #cacaca;
     --color-rating-p: #666666;
     --hovers-blue: #669EC0;
+    --search-button-hover: rgba(255,255,255,0.3);
     --color-border-hotel: #e5e5e5;
     --copyrighting-active: #BDBBBC;
     --header-height: 55px
@@ -134,13 +136,13 @@ a , button, input {
 }
 .general-information .title{
     color: var(--basic-black);
-    margin-top: 48px;
+    padding-top: 44px;
+    padding-bottom: 51px;
     padding-left: 100px;
     padding-right: 100px;
 }
 .items-about{
     display: flex;
-    margin-top: 54px;
     align-items: flex-start;
     background-color: var(--basic-light-blue);
 }
@@ -231,7 +233,6 @@ a , button, input {
     display: flex;
     background: var(--b-c-description-bottom);
     padding-top: 46px;
-    padding-bottom: 54px;
 }
 .description-bottom li {
     margin: 0 auto;
@@ -239,8 +240,11 @@ a , button, input {
 }
 .description-bottom p {
     margin-top: 3px;
-    padding-bottom: 21px;
+    padding-bottom: 54px;
 } 
+.description-bottom .par-number {
+    padding-bottom: 24px;
+}
 
 .description h4{
     font-weight: bold;
@@ -260,7 +264,7 @@ a , button, input {
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
-    padding-top: 36px;
+    padding-top: 58px;
 }
 .title-of-search p {
     padding: 33px 260px 44px;
@@ -505,7 +509,7 @@ footer.catalog-page {
     position: relative;
     width: 317px;
     height: 36px;
-    border: 2px solid white;
+    border: 2px solid var(--basic-white);
     border-radius: 2px;
     display: flex;
     align-items: center;
@@ -574,7 +578,7 @@ footer.catalog-page {
     background-color: var(--b-c-range);
     border: 8px solid var(--basic-white);
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    box-shadow: 0 2px 1px 0 var(--box-shadow-range);
     cursor: pointer;
     top: -9px;
 }
@@ -587,7 +591,7 @@ footer.catalog-page {
 .button-show {
     text-transform: uppercase;
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid var(--basic-white);
     color: var(--basic-white);
     padding: 8px 34px;
     margin-top: 32px;
@@ -665,9 +669,9 @@ footer.catalog-page {
     fill: var(--basic-black);
 }
 .arrow-down {
-   fill: var(--basic-light-blue); 
-   transform: rotateX(180deg);
-   margin-right: 2px;
+    fill: var(--basic-light-blue); 
+    transform: rotateX(180deg);
+    margin-right: 2px;
 }
 .arrow-down:hover, 
 .arrow-down:focus {
@@ -949,7 +953,7 @@ footer.catalog-page {
 }
 .search-button:hover, .search-button:focus {  
     background-color: var(--hovers-blue);
-    color: rgba(255,255,255,0.3);
+    color: var(--search-button-hover);
     cursor: pointer;
 }
 
