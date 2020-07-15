@@ -25,7 +25,7 @@
     --search-button-hover: rgba(255,255,255,0.3);
     --color-border-hotel: #e5e5e5;
     --copyrighting-active: #BDBBBC;
-    --header-height: 55px
+    --header-height: 55px;
 }
 .index-page {
     min-width: 1200px;
@@ -137,7 +137,7 @@ a , button, input {
 .general-information .title{
     color: var(--basic-black);
     padding-top: 48px;
-    padding-bottom: 54px;
+    padding-bottom: 55px;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -239,7 +239,6 @@ a , button, input {
     flex-basis: 261px;
 }
 .description-bottom p {
-    margin-top: 3px;
     padding-bottom: 54px;
 } 
 .description-bottom .par-number {
@@ -252,7 +251,7 @@ a , button, input {
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 26px;
+    margin-bottom: 28px;
 }
 .title-of-search {
     text-transform: uppercase;
@@ -264,10 +263,10 @@ a , button, input {
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
-    padding-top: 55px;
+    padding-top: 57px;
 }
 .title-of-search p {
-    padding: 33px 260px 44px;
+    padding: 31px 260px 45px;
 }
 .map {
     background-image: url(../img/sedona-map.jpg);
@@ -294,8 +293,8 @@ footer.index-page-footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 23px;
-    padding-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 25px;
     width: 100%;
     opacity: 0.9;
 }
@@ -610,7 +609,7 @@ footer.catalog-page {
     padding-bottom: 32px;
     padding-right: 70px;
 }
-.search-result > p,a{
+.search-result > p, a{
     font-size: 12px;
     line-height: 18px;
 }
@@ -620,24 +619,23 @@ footer.catalog-page {
     padding-left: 45px;
     flex-grow: 1;
 }
+.search-parameters a {
+    color: var(--basic-black);
+    border-bottom: 1px dashed var(--basic-light-blue);
+    opacity: 0.3
+}
+
 .search-parameters .active{
     color: var(--basic-light-blue);
     border: none;
+    opacity: 1;
 }
- .search-parameters a {
-    color: var(--basic-black);
-    border-bottom: 1px dashed var(--basic-light-blue); 
-}
-.search-parameters li:last-child, 
-.search-parameters li:nth-child(3) {
-    opacity: 0.3;
-}
-.search-parameters a:hover {
+
+.search-parameters a:hover,
+.search-parameters a:focus {
     color: var(--basic-light-blue);
 }
-.search-parameters a:focus {
-    color: var(--basic-black);
-}
+
 .title-of-result {
     padding-left: 73px;
 }
@@ -660,30 +658,26 @@ footer.catalog-page {
     align-self: center;
     margin-top: 6px;
 }
-.arrow-up {
+.arrows a {
+    fill: var(--basic-light-blue);
+}
+.arrows .arrow-up {
     fill: var(--color-arrow-up);
     margin-right: 12px;
 }
-.arrow-up:hover, 
-.arrow-up:focus {
-    fill: var(--basic-black);
-}
-.arrow-down {
-    fill: var(--basic-light-blue); 
+
+.arrows .arrow-down {
     transform: rotateX(180deg);
     margin-right: 2px;
 }
-.arrow-down:hover, 
-.arrow-down:focus {
+
+.arrows a:hover, 
+.arrows a:focus {
     fill: var(--basic-black);
 }
-.arrow-up:active {
+.arrows a:active {
     fill: var(--basic-light-blue);
 }
-.arrow-down:active {
-    fill: var(--basic-light-blue);
-}
-
 
 .container-stars{
     display: flex;
@@ -804,15 +798,15 @@ footer.catalog-page {
     width: 568px;
 }
 .search-form a {
+    display: block;
+    width: 100%;
     color: var(--basic-white);
     background-color: var(--basic-brown);
     font-weight: bold;
     font-size: 21px;
-    line-height: 26px;
+    line-height: 27px;
     text-transform: uppercase;
-    padding: 30px 139px;
-    display: inline-block;
-    vertical-align: middle;
+    padding: 30px 30px;
 }
 .search-form a:hover, 
 .search-form a:focus {
@@ -872,6 +866,9 @@ footer.catalog-page {
     text-transform: uppercase;
     font-weight: 700;
 }
+.text::placeholder {
+    color: var(--basic-black);
+}
 .calendar-icon {
     border: none;
     background-color: var(--b-c-search-form-text);
@@ -929,6 +926,13 @@ footer.catalog-page {
     padding-right: 30px;
     align-self: center;
 }
+
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+}
 .minus {
     width: 38px;
     height: 38px;
@@ -949,7 +953,7 @@ footer.catalog-page {
     width: 458px;
     height: 58px;
     border: none;
-    margin-top: 55px;
+    margin-top: 53px;
 }
 .search-button:hover, .search-button:focus {  
     background-color: var(--hovers-blue);
